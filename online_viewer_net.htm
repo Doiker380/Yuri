@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Después de decirte lo que siento 💌</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #1b0c2e, #2c1a44);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 100vh;
+      transition: background 0.4s ease;
+    }
+
+    .modoClaro {
+      background: linear-gradient(to bottom right, #f3eaff, #e6d6ff);
+    }
+
+    .top-buttons {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .carta {
+      background: #2e1b47;
+      border: 2px solid #9c6fe5;
+      border-radius: 20px;
+      padding: 30px;
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(100, 60, 150, 0.5);
+      animation: fadeIn 2s ease;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    .modoClaro .carta {
+      background: #ffffff;
+      color: #333;
+      border: 2px solid #b399ff;
+    }
+
+    .decoracion {
+      width: 100px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(180, 120, 255, 0.4);
+    }
+
+    h1 {
+      color: #d4b3ff;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .modoClaro h1 {
+      color: #5e429d;
+    }
+
+    p {
+      color: #e5d4ff;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .modoClaro p {
+      color: #333;
+    }
+
+    .emojis {
+      font-size: 1.5em;
+      margin-top: 15px;
+      color: #f0dfff;
+    }
+
+    .modoClaro .emojis {
+      color: #7a5ca8;
+    }
+
+    button {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 10px;
+      background-color: #9c6fe5;
+      color: white;
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #b48cf0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .click-reveal {
+      color: #ccc;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .modoClaro .click-reveal {
+      color: #666;
+    }
+
+    .secreto {
+      display: none;
+      margin-top: 10px;
+      color: #ffd;
+    }
+
+    .modoClaro .secreto {
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-buttons">
+    <button onclick="toggleTheme()">🌙/☀️</button>
+    <button onclick="toggleMusic()">🎵</button>
+  </div>
+
+  <div class="carta">
+    <h1>Después de lo que te dije anoche 💭</h1>
+
+    <p>
+      Yuri 💜<br><br>
+      Anoche te confesé algo que llevaba guardando un buen rato… y aún me cuesta creer que me hayas correspondido.  
+      Pero la verdad es que no logré decir todo. Había mucho más en mi pecho, pero eran las 4am y entre los nervios y el momento... no pude.  
+    </p>
+
+ 
+    <img class="decoracion" src="https://static.vecteezy.com/system/resources/previews/020/575/262/original/pink-lilies-with-buds-on-the-stems-watercolor-painting-free-png.png" alt="Milo J jeje">
+
+    <p>
+      Tú eres esa persona con la que todo se siente diferente.  
+      No solo me gustas, Yuri… me haces sentir tranquilo, feliz, genuino. Me gusta tu forma de ser: tu espontaneidad, tu risa, tu voz, lo random que dices.  
+      Me gustas tú, entera, sin filtros. Incluso cuando me dices niño, tonot, o lo que sea, aunque tambien eres tonota, mi princesa.
+    </p>
+
+    <p>
+      Gracias por tantos momentos compartidos: cantar contigo en Discord, crear nuestra playlist, ver peliculas en Discord, videos o lo que sea, reírnos en Roblox y en otros juegos, como minecraft o It Takes Two.  
+      Todo eso me fue acercando a ti… y sin darme cuenta, te fuiste quedando en mí.
+    </p>
+
+    <img class="decoracion" src="https://c.tenor.com/z-TvY04VNsYAAAAC/pompompurin-vivian-kong.gif" alt="Tulipanes">
+
+    <p>
+      No sé lo que venga, ni cómo irá esto, pero sí sé que quiero seguir conociéndote, queriendote, seguir riéndome contigo, y construir algo bonito, sin prisas.  
+      Me alegra muchísimo saber que tú también sientes algo. De verdad, no sabes cuánto.
+    </p>
+
+    <p>Gracias por estar aquí. Gracias por ser tú.</p>
+    <img class="decoracion" src="https://c.tenor.com/cHIcIqCfqsEAAAAj/sanrio-pom.gif" alt="Tulipanes">
+
+    <p>— Con cariño: David 💌</p>
+
+    <div class="emojis">🌷🎮💜🎧🫂</div>
+
+    <div class="click-reveal" onclick="document.getElementById('secreto').style.display='block'">
+      🌸 Haz clic si quieres leer una última cosita
+    </div>
+    <div id="secreto" class="secreto">
+      No tienes idea de cuánto me ilusiona esto. Y si un día dudas, aquí estaré recordándotelo. Te quiero mucho ❤️
+    </div>
+  </div>
+
+  <audio id="bgMusic" autoplay loop>
+    <source src="https://doiker380.github.io/Carta_02/intie.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('modoClaro');
+    }
+
+    function toggleMusic() {
+      const music = document.getElementById("bgMusic");
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+</body>
+</html>
